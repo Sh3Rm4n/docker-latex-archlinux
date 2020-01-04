@@ -11,7 +11,7 @@ RUN su docker -c 'yay -Su --noprogressbar --needed --noconfirm --removemake --cl
 # Install latex packages
 RUN su docker -c 'yay -S --noprogressbar --needed --noconfirm --removemake --cleanafter \
     texlive-most \
-    python-pygments \
+    pygmentize \
     texlive-latexindent-meta'
 
 # Install pandoc packages
