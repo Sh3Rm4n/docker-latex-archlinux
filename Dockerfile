@@ -12,6 +12,7 @@ RUN su docker -c 'yay -Su --noprogressbar --needed --noconfirm --removemake --cl
 RUN su docker -c 'yay -S --noprogressbar --needed --noconfirm --removemake --cleanafter \
     texlive-most \
     pygmentize \
+    biber \
     texlive-latexindent-meta'
 
 # Install pandoc packages
