@@ -23,7 +23,9 @@ RUN su docker -c 'yay -S --noprogressbar --needed --noconfirm \
 
 # Install extras
 RUN su docker -c 'yay -S --noprogressbar --needed --noconfirm \
-    textidote-bin'
+    textidote-bin \
+    git-latexdiff'
+
 
 # Remove unneeded dependencies
 RUN su docker -c 'yay -Yc --noprogressbar --noconfirm'
