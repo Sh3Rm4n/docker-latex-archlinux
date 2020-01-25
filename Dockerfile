@@ -21,5 +21,9 @@ RUN su docker -c 'yay -S --noprogressbar --needed --noconfirm \
     pandoc-crossref \
     pandoc-citeproc'
 
+# Install extras
+RUN su docker -c 'yay -S --noprogressbar --needed --noconfirm \
+    textidote-bin'
+
 # Remove unneeded dependencies
 RUN su docker -c 'yay -Yc --noprogressbar --noconfirm'
