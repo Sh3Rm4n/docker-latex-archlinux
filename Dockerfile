@@ -14,15 +14,14 @@ RUN su docker -c 'yay -Sy --noprogressbar --needed --noconfirm archlinux-keyring
         pygmentize \
         biber \
         texlive-latexindent-meta \
-    `# Install pandoc packages` \
-    && yay -S --noprogressbar --needed --noconfirm \
+        `# Install pandoc packages` \
         pandoc \
         pandoc-crossref \
         pandoc-citeproc \
-    `# Install extras` \
-    && yay -S --noprogressbar --needed --noconfirm \
+        `# Install extras` \
         textidote-bin \
         git-latexdiff \
         bc \
+        zip \
     `# Remove unneeded dependencies` \
     && yay -Yc --noprogressbar --noconfirm'
