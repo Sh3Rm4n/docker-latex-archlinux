@@ -12,6 +12,8 @@ RUN su docker -c 'yay -Sy --noprogressbar --needed --noconfirm archlinux-keyring
         texlive-most \
         ghostscript \
         pygmentize \
+        imagemagick \
+        inkscape \
         biber \
         texlive-latexindent-meta \
         `# Install pandoc packages` \
